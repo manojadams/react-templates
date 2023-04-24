@@ -1,0 +1,401 @@
+/****************************************************************************************************General Classes and basic resets*/
+body {
+	margin: 0 auto;
+}
+body, h1,h2,div, span {font-family: "arial";text-align: center;}
+h1,h2,h3,h4,h5{
+	text-transform: uppercase;
+}
+hr {
+	border-bottom: 0 solid white;
+}
+p {
+	font-family: "calibri";
+}
+a {
+	font-family: "arial";
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+img {
+	display: block;
+	outline: 0;
+	border: 0;
+}
+blockquote {
+	font-family:"arial";
+	text-align: left;
+	margin: 1.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	line-height: 0.1em;
+	font-size: 4em;
+	content: open-quote;
+	vertical-align: -0.4em;
+}
+blockquote:after {
+	line-height: 0.1em;
+	 font-size: 4em;
+	content: open-quote;
+	vertical-align: -0.7em;
+}
+blockquote p {
+	display: inline-block;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.subwrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*********************************************************************************************************************************Header*/
+.header {
+	width: 100%;
+	min-width: 1200px;
+	height: 120px;
+	background-image: url(/public/assets/images/hstrip.png);
+	background-size: 100% 2px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-color: #272727;
+}
+.logo {
+	float: left;
+	width: 280px;
+	height: 120px;
+	background: url(/public/assets/images/logo.png) no-repeat;
+	background-position: 50%;
+}
+.nav {
+	float: left;
+	
+}
+.nav ul {
+	margin: 50px 0;
+}
+.nav ul li {
+	display: inline-block;
+	list-style: none;
+	border-right: 1px solid #919191;
+}
+
+.lastnav {
+	border: none !important;
+}
+.nav ul li a {
+	color: #919191;
+	font-size:14px;
+	text-transform: uppercase;
+	padding: 20px;
+}
+.nav ul li a:hover {
+	color: white;
+}
+/**********************Login related classes*/
+.loginwrapper {
+	float: right;
+}
+.loginwrapper ul {
+	margin: 50px 30px;
+}
+.loginwrapper ul li {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+.loginwrapper ul li a {
+	color: white;
+	text-transform: uppercase;
+	
+}
+.signin {
+	position: relative;
+	background: url(/public/assets/images/buttons.png) no-repeat;
+	background-size: 200%;
+	padding: 10px 20px;
+}
+.loginform {
+	width: 215px;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	border-radius: 5px;
+	background-image: url(/public/assets/images/loginbg.png);
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-top: 20px;
+}
+.loginform input[type="email"], input[type="password"] {
+	width: 75%;
+	border: 1px solid #d9d9d9;
+	box-shadow: 1px 1px rgb(240,240,240) inset;
+	margin: 4px 10%;
+	padding: 5px;
+}
+.loginform input[type="submit"] {
+	color: white;
+	text-align: center;
+	background: #faaf3a;
+	box-shadow: 1px 1px #595959;
+	border-radius: 5px;
+	border: 0;
+	font-size: 15px;
+	font-family: "calibri";
+	margin: 5px 10%;
+	padding: 5px 18px;
+}
+.signup {
+	background: url(/public/assets/images/buttons.png) no-repeat;
+	background-position: -100px 0px;
+	padding: 10px 20px;
+}
+/*********************************************************************************************************************Content*/
+.content {
+	width: 100%;
+}
+.slidewrapper {
+	width: 100%;
+	background: url(/public/assets/images/chalkboard.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.slidemenu ul {
+	margin-top: 0;
+}
+.slidemenu ul li {
+	padding: 0 60px;
+}
+.slidemenu ul li a {
+	color: white;
+	width: 200px;
+	height: 180px;
+	display: inline-block;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.slidemenu ul li a span {
+	display: block;
+	padding-top: 150px;
+}
+.tour {
+	background-image: url(/public/assets/images/tour2.png);
+}
+a.tour:hover {
+	color: #825919;
+	background-image: url(/public/assets/images/tour.png);
+}
+.videos {
+	color: white;
+	background-image: url(/public/assets/images/videos2.png);
+}
+.videos:hover {
+	color: #825919;
+	background-image: url(/public/assets/images/videos.png);
+}
+.tutorials {
+	color: white;
+	background-image: url(/public/assets/images/tutorials2.png);
+}
+.tutorials:hover {
+	color: #825919;
+	background-image: url(/public/assets/images/tutorials.png);
+}
+.slide {
+	width: 1200px;
+}
+.slide h1 {
+	color: #d5d3d4;
+	margin: 0;
+	padding: 65px 0 20px 0;
+}
+.slide p {
+		color: #d5d3d4;
+}
+div.getstartedwrapper {
+	margin: 30px 0;
+}
+div.getstartedwrapper img{
+	display: inline;
+}
+a.getstartsnow {
+	display: inline-block;
+	border-radius: 5px;
+	border: 3px solid white;
+}
+a.getstartsnow span {
+	color: white;
+	width: 215px;
+	display: block;
+	font-size: 36px;
+	font-family:"Angsana New";
+	padding: 10px;
+	background: #8bc53d;
+}
+.slidemenu {
+	width: 100%;
+	height: 195px;
+	background: url(/public/assets/images/slidemenu.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.tilewrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.tile {
+	width: 320px;
+	display: inline-block;
+	border: 1px solid #e4e4e4;
+	background: url(/public/assets/images/tilesgradient.png) repeat-x;
+	background-size: 100% 100%;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+.tile h2 {
+	color: black;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.tile p {
+	text-align: left;
+	padding: 15px;
+}
+.tile img {
+	display: inline;
+}
+.ourcustomers {
+	width: 100%;
+	padding:20px 0;
+	background: url(/public/assets/images/ourcustomers3.png) no-repeat;
+	background-size: 100%;
+}
+.ourcustomers h2 {
+	text-align: left;
+	color: white;
+	font-weight: normal;
+}
+.ourcustomers blockquote {
+	color: white;
+}
+.ourcustomers h3 {
+	color: white;
+	text-align: right;
+	text-transform: none;
+}
+.partners h2 {
+	font-weight: normal;
+}
+.partners ul li a {
+	width: 170px;
+	height: 84px;
+	display: inline-block;
+	background-repeat: no-repeat;
+
+}
+.peersonify {
+	background: url(/public/assets/images/partners.png) 0 50%;
+}
+.gobank {
+	background: url(/public/assets/images/partners.png) -180px 50%;
+}
+.jumpon {
+	background: url(/public/assets/images/partners.png) -350px 50%;
+}
+.shopcloud {
+	background: url(/public/assets/images/partners.png) -520px 50%;
+}
+.sitterrified {
+	background: url(/public/assets/images/partners.png) -700px 50%;
+	}
+.boevo {
+	background: url(/public/assets/images/partners.png) -880px 50%;
+}
+/****************************************************************************************************Footer*/
+.footer {
+	background-image: url(/public/assets/images/hstrip.png);
+	background-repeat: no-repeat;
+	background-color: #272727;
+}
+.footernav {
+	width: 50%;
+	float: left;
+}
+.footernav h4 {
+	color: #919191;
+	text-align: left;
+	font-size:14px;
+	margin: 30px 0 10px 0;
+}
+.footernav ul {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+.footernav ul li {
+	border-right: 1px solid #919191;
+	padding: 0 10px;
+}
+.footernav ul li a {
+	color: #919191;
+	font-size: 12px;
+}
+.footernav ul li:first-child, li:last-child {
+	padding-left: 0;
+}
+.footernav ul li a:hover {
+	color: white;
+}
+/**********************Social sharing*/
+.socialicons {
+	width: 50%;
+	float: right;
+	padding-top: 30px;
+}
+.socialicons h4 {
+	color: #919191;
+}
+.socialicons ul li a {
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	
+}
+.fb {
+	background: url(/public/assets/images/socialicons.png) 10% 35%;
+}
+.twitter {
+	background: url(/public/assets/images/socialicons.png) -79px 35%;
+}
+.youtube {
+	background: url(/public/assets/images/socialicons.png) -297px 35%;
+}
+.linkedin {
+	background: url(/public/assets/images/socialicons.png) -140px 35%;
+}
+.gplus {
+	background: url(/public/assets/images/socialicons.png) -109px 35%;
+}
+/**********************Copyright classes*/
+.copyright {
+	clear: both;
+	color: #818181;
+	padding-top: 20px;
+}
+.copyright h6 {
+	padding: 20px;
+	margin: 0;
+}

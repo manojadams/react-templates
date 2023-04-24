@@ -18,8 +18,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "swc-loader"
+          loader: "swc-loader",
         }
+      },
+      {
+        test: /\.css$/,
+        use:  ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)/,
+        type: "asset/resource"
       }
     ],
   },

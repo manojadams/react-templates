@@ -1,8 +1,9 @@
 import React from "react";
+import Template from "./template-evergreen";
 
 function App() {
     return (
-        <div>App</div>
+        <Template />
     )
 }
 
